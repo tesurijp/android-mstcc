@@ -114,7 +114,7 @@ public class MsTccServer {
         // get ingredients
         byte[] ssidchars = config.SSID.getBytes("UTF-8");
         byte[] passchars = config.preSharedKey.getBytes("UTF-8");
-        byte[] bssidVal = mWifiManagerRef.getBSSID("wlan0");
+        byte[] bssidVal = mWifiManagerRef.getBSSID("p2p0");
         // gen strusts
         byte[] ssid = buildStruct(2, ssidchars);
         byte[] bssid = buildStruct(3, bssidVal);
